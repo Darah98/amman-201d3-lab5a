@@ -79,14 +79,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-var testArray = [2, 3, 4]; //eslint-disable-line
+var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
     var summation = sum(sumArr[0], sum(sumArr[1] , sumArr[2])[0])[0];
-    var descriptionArray = summation + ' was passed in an array of numbers, and ' + summation + ' is their sum.';
+    var descriptionArray = testArray + ' was passed in as an array of numbers, and ' + summation + ' is their sum.';
     return [summation , descriptionArray];
 }
-console.log(SumArray([2,3,4]));
+console.log(sumArray([2,3,4]));
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
